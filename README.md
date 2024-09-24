@@ -1,7 +1,19 @@
 # Libtorch_install
-Libtorch install and test
-
 ## 1. Install NVIDIA dirver
+`sudo apt purge *nvidia*`
+
+`sudo apt update`
+
+`sudo apt upgrade`
+
+`ubuntu-drivers list`
+
+`sudo ubuntu-drivers install nvidia:560`
+
+優先選擇使用nvidia gpu
+
+`sudo prime-select nvidia`
+
 ## 2. Install CUDA
 ## 3. Install cudnn
 ## 4. Install cudatoolkit
