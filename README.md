@@ -33,6 +33,11 @@ https://developer.nvidia.com/cuda-12-4-0-download-archive?target_os=Linux&target
 
 ## 3. Install cudnn
 直接照著官方網站步驟
+
+官網:
+
+https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
+
 ```
   wget https://developer.download.nvidia.com/compute/cudnn/9.4.0/local_installers/cudnn-local-repo-ubuntu2004-9.4.0_1.0-1_amd64.deb
   sudo dpkg -i cudnn-local-repo-ubuntu2004-9.4.0_1.0-1_amd64.deb
@@ -40,9 +45,12 @@ https://developer.nvidia.com/cuda-12-4-0-download-archive?target_os=Linux&target
   sudo apt-get update
   sudo apt-get -y install cudnn
 ```
+用下面的指令可以確定是否正確安裝
+`cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2`
 
-https://developer.nvidia.com/cudnn-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
+reference:
 
+https://blog.csdn.net/weixin_45622961/article/details/136636431
 ## 4. Install cudatoolkit
 ## 5. Install up to date version of cmake
 ### donwload cmake file and extract
@@ -56,6 +64,7 @@ https://cmake.org/download/
 `sudo make install`
 
 reference:
+
 https://blog.csdn.net/qq21497936/article/details/141933927
 
 ## 	Do the cmake command with respect to absolute path to the PyTorch C++ API
