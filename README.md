@@ -1,8 +1,10 @@
 # Libtorch_install
 ## 1. Install NVIDIA dirver
 ```
+sudo lshw -numeric -C display
 sudo apt purge *nvidia*
-sudo apt update`
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt update
 sudo apt upgrade
 ubuntu-drivers list
 sudo ubuntu-drivers install nvidia:560
